@@ -1,0 +1,94 @@
+  .icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  
+  .campusPara {
+    line-height: 1.5rem;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .boxCamp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .box-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .right_btn {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #969393;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  
+  .right_btn:hover {
+    color: #fff;
+    background-color: #00825a;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .arrowBtn {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .right_btn {
+      width: 30px;
+      height: 30px;
+    }
+
+    .boxCamp {
+      justify-content: space-between; 
+      padding: 0 10px;
+    }
+  
+    .box-1 {
+      width: auto;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+  
+    .right_btn {
+      height: 30px;
+      width: 30px;
+    }
+  
+    .arrowBtn {
+      font-size: 12px;
+    }
+  
+    .campusPara {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .box-1 {
+      flex-wrap: wrap;
+    }
+  }
+      
+  
